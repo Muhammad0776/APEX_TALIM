@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX TA'LIM</title>
+    <link rel="icon" href="/images/Logo.png">
     <!--Bootstrap CSS 5.0-V -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -16,10 +17,14 @@
     <!--Bootstrap swiper css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <!-- jquary -->
 <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--style css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -66,6 +71,61 @@
         </div>
       </nav>
 
+      <div class="container">
+
+          <!-- header start -->
+          <header>
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-6">
+        <div class="text-start">
+            <h5 class="mb-3" data-aos="zoom-in-right" data-aos-duration="3000">Talaba bo‘lishingizga albatta ishonamiz</h5>
+            <p data-aos="zoom-in-right" data-aos-duration="3000">Shaxmatda yo‘lga chiqqan piyoda, bir <br> kun kelib albatta vazir bo’ladi.</p>
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn01" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-aos="flip-up" data-aos-duration="2000">
+    KURSGA YOZILISH
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-white d-flex justify-content-center align-items-center" id="staticBackdropLabel"><img src="/images/whiteLogo.png" class="modal-img me-3" alt="not photo">APEX TA'LIM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg fs-5 text-white"></i></button>
+        </div>
+        <div class="modal-body text-center px-5">
+         <h2 class="mb-4">Kursga yozilish</h2>
+        
+         <form class="row g-3 py-3">
+            <div class="col-md-12">
+              <input type="text" class="form-control py-3" id="validationDefault01" placeholder="Ism va familiyangizni yozing" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control py-3" id="validationDefault02" placeholder="Telefon raqamingizni yozing" required>
+            </div>
+            <div class="col-12 pt-0 pt-5 d-flex justify-content-end">
+              <button class="btn btn02" type="submit">KURSGA YOZILISH</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 pt-0 col12">
+        <div class="ms-5">
+            <img src="/images/man.png" class="imgMan" alt="not photo" data-aos="fade-left" data-aos-duration="3000">
+        <div class="absol"></div>
+        </div>
+    </div>
+</div>
+          </header>
+
+      </div>
+
 
 
 
@@ -83,7 +143,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+      </script>
     <!--Bootstrap swiper js-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

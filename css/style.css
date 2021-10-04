@@ -3,7 +3,6 @@ html,
 body {
   scroll-behavior: smooth;
   background: linear-gradient(124.06deg, #ecfefa 9.47%, #bee9ff 29.35%, #dbeaff 60.79%, #f3dbff 85.49%);
-  background-size: cover !important;
   background-color: none !important;
   padding: 0;
   margin: 0;
@@ -40,6 +39,110 @@ body {
   color: #000000;
 }
 
+header .row .col-12 {
+  padding-top: 100px;
+}
+header .row .col-12 .text-start h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 65px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+header .row .col-12 .text-start p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 44px;
+}
+header .row .col-12 .text-start .btn01 {
+  width: 234px;
+  height: 65px;
+  background: #00445b;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.8s transparent;
+}
+header .row .col-12 .text-start .btn01:hover {
+  background: #ecfefa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #111111;
+}
+header .row .col-12 .text-start .modal-header {
+  background: #00445b;
+  border-radius: 0;
+}
+header .row .col-12 .text-start .modal-header .btn-close {
+  padding-top: 0rem;
+  margin-bottom: 3rem;
+  background: none !important;
+}
+header .row .col-12 .text-start .modal-header .modal-img {
+  width: 70px;
+  height: 70px;
+  margin-left: 120px;
+}
+header .row .col-12 .text-start .modal-body {
+  background-color: #ecfefa;
+}
+header .row .col-12 .text-start .modal-body h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+header .row .col-12 .text-start .modal-body .btn02 {
+  width: 184px;
+  height: 55px;
+  background: #00445b;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.8s transparent;
+}
+header .row .col-12 .text-start .modal-body .btn02:hover {
+  background: #ecfefa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #111111;
+}
+header .row .col12 .imgMan {
+  width: 407px;
+  height: 578px;
+  max-width: 100%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+header .row .col12 .absol {
+  position: absolute;
+  width: 250px;
+  height: 135px;
+  left: 921px;
+  top: 640px;
+  background: #c7eaff;
+  filter: blur(20px);
+}
+
 @media screen and (max-width: 974px) {
   .navbar .container .logo a {
     font-family: Montserrat;
@@ -66,6 +169,16 @@ body {
     font-weight: 500;
     font-size: 13.5272px;
     line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .container .row .text-start h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 65px;
     letter-spacing: 0.02em;
     color: #000000;
   }
