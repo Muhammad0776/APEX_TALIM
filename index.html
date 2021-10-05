@@ -20,13 +20,54 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <!-- jquary -->
-<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--style css-->
     <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 </head>
 
 <body>
@@ -43,10 +84,10 @@
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Yangiliklar</a>
+                <a class="nav-link active" aria-current="page" href="#yangiliklar">Yangiliklar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kurslar</a>
+                <a class="nav-link" href="#kurslar">Kurslar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ustozlar</a>
@@ -116,14 +157,122 @@
         </div>
     </div>
     <div class="col-12 col-sm-12 col-md-6 pt-0 col12">
-        <div class="ms-5">
+        <div class="ms-5 div">
             <img src="/images/man.png" class="imgMan" alt="not photo" data-aos="fade-left" data-aos-duration="3000">
         <div class="absol"></div>
         </div>
     </div>
 </div>
-          </header>
+    </header>
 
+    <div class="py-4 Yangiliklar" id="yangiliklar">
+      <h2 class="mb-4">Yangiliklar</h2>
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide text-start">
+      <img src="/images/Group2.png" alt="not photo" class="d-block">
+      <div class="px-3 mb-5">
+        <b>Mental arifmetikani oson o‘rganamiz</b>
+      <span class="text-muted">22.09.2021</span>
+      </div>
+    </div>
+    <div class="swiper-slide text-start">
+      <img src="/images/Group3.png" alt="not photo" class="d-block">
+     <div class="px-3 mb-5">
+      <b class="d-block">IELTS imtihoni haqida</b>
+      <span class="text-muted">22.09.2021</span>
+     </div>
+    </div>
+    <div class="swiper-slide text-start">
+      <img src="/images/Rectangle1.png" alt="not photo" class="d-block">
+      <div class="px-3 mb-5">
+        <b>Ingliz tilini bilish zamon talabi</b>
+      <span class="text-muted">22.09.2021</span>
+      </div>
+    </div>
+    <div class="swiper-slide text-start">
+      <img src="/images/Group2.png" alt="not photo" class="d-block">
+      <div class="px-3 mb-5">
+        <b>Mental arifmetikani oson o‘rganamiz</b>
+      <span class="text-muted">22.09.2021</span>
+      </div>
+    </div>
+    <div class="swiper-slide text-start">
+      <img src="/images/Group3.png" alt="not photo" class="d-block">
+     <div class="px-3 mb-5">
+      <b class="d-block">IELTS imtihoni haqida</b>
+      <span class="text-muted">22.09.2021</span>
+     </div>
+    </div>
+    <div class="swiper-slide text-start">
+      <img src="/images/Rectangle1.png" alt="not photo" class="d-block">
+      <div class="px-3 mb-5">
+        <b>Ingliz tilini bilish zamon talabi</b>
+      <span class="text-muted">22.09.2021</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+    </div>
+
+          <div class="py-4 mt-5 Kurslar" id="kurslar">
+            <h2 class="mb-4">Kurslar</h2>
+            <div class="carousel owl-carousel">
+
+              <div class="card shadow">
+                <img src="/images/Rectangle18.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matematika</h5>
+                  <p class="card-text">Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button href="#" class="btn d-block btnKurs">KURSGA YOZILISH</button>
+                </div>
+              </div>
+
+              <div class="card shadow">
+                <img src="/images/Rectangle10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fizika</h5>
+                  <p class="card-text">Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button href="#" class="btn d-block btnKurs">KURSGA YOZILISH</button>
+                </div>
+              </div>
+
+              <div class="card shadow">
+                <img src="/images/Rectangle11.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ingliz tili</h5>
+                  <p class="card-text">Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button href="#" class="btn d-block btnKurs">KURSGA YOZILISH</button>
+                </div>
+              </div>
+
+              <div class="card shadow">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcXZRs4YxXpRzPekPlFAXSostJ6jvbWZZRw&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rus tili</h5>
+                  <p class="card-text">Rus tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button href="#" class="btn d-block btnKurs">KURSGA YOZILISH</button>
+                </div>
+              </div>
+
+              <div class="card shadow">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-4sCCcjx4kYRR6dd76IjPRRwuhQWvBbTqcCAESiS86LTQbRZ771BloP-Ciarf6Gczx0&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fransuz tili</h5>
+                  <p class="card-text">Fransuz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button href="#" class="btn d-block btnKurs">KURSGA YOZILISH</button>
+                </div>
+              </div>
+              
+          </div>
+
+          </div>
       </div>
 
 
@@ -147,6 +296,20 @@
     <!--Bootstrap swiper js-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <!-- JS -->
     <script src="js/main.js"></script>
 </body>

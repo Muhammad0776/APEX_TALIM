@@ -4,12 +4,14 @@ body {
   background-color: none !important;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .navbar {
   padding-top: 1.8rem;
 }
+
 .navbar .container .logo a {
   font-family: Montserrat;
   font-style: normal;
@@ -19,10 +21,12 @@ body {
   letter-spacing: 0.02em;
   color: #000000;
 }
+
 .navbar .container .logo a .imgLogo {
   width: 85px;
   height: 85px;
 }
+
 .navbar .container .collapse ul li a {
   padding-top: 0rem !important;
   padding-bottom: 2rem;
@@ -40,6 +44,7 @@ body {
 header .row .col-12 {
   padding-top: 100px;
 }
+
 header .row .col-12 .text-start h2 {
   font-family: Montserrat;
   font-style: normal;
@@ -49,6 +54,7 @@ header .row .col-12 .text-start h2 {
   letter-spacing: 0.02em;
   color: #000000;
 }
+
 header .row .col-12 .text-start p {
   font-family: Montserrat;
   font-style: normal;
@@ -59,6 +65,7 @@ header .row .col-12 .text-start p {
   color: #000000;
   margin-bottom: 44px;
 }
+
 header .row .col-12 .text-start .btn01 {
   width: 234px;
   height: 65px;
@@ -71,31 +78,39 @@ header .row .col-12 .text-start .btn01 {
   letter-spacing: 0.02em;
   color: #ffffff;
   border-radius: 0;
+  -webkit-transition: all 0.8s transparent;
   transition: all 0.8s transparent;
 }
+
 header .row .col-12 .text-start .btn01:hover {
   background: #ecfefa;
   border: 1px solid #000000;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #111111;
 }
+
 header .row .col-12 .text-start .modal-header {
   background: #00445b;
   border-radius: 0;
 }
+
 header .row .col-12 .text-start .modal-header .btn-close {
   padding-top: 0rem;
   margin-bottom: 3rem;
   background: none !important;
 }
+
 header .row .col-12 .text-start .modal-header .modal-img {
   width: 70px;
   height: 70px;
   margin-left: 120px;
 }
+
 header .row .col-12 .text-start .modal-body {
   background-color: #ecfefa;
 }
+
 header .row .col-12 .text-start .modal-body h2 {
   font-family: Montserrat;
   font-style: normal;
@@ -105,6 +120,7 @@ header .row .col-12 .text-start .modal-body h2 {
   letter-spacing: 0.02em;
   color: #000000;
 }
+
 header .row .col-12 .text-start .modal-body .btn02 {
   width: 184px;
   height: 55px;
@@ -117,20 +133,26 @@ header .row .col-12 .text-start .modal-body .btn02 {
   letter-spacing: 0.02em;
   color: #ffffff;
   border-radius: 0;
+  -webkit-transition: all 0.8s transparent;
   transition: all 0.8s transparent;
 }
+
 header .row .col-12 .text-start .modal-body .btn02:hover {
   background: #ecfefa;
   border: 1px solid #000000;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #111111;
 }
+
 header .row .col12 .imgMan {
   width: 407px;
   height: 578px;
   max-width: 100%;
-  transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
 }
+
 header .row .col12 .absol {
   position: absolute;
   width: 250px;
@@ -138,7 +160,8 @@ header .row .col12 .absol {
   left: 855px !important;
   top: 640px;
   background: #c7eaff;
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 
 @media screen and (max-width: 974px) {
@@ -157,7 +180,9 @@ header .row .col12 .absol {
   }
   .navbar .container .collapse {
     display: inline-block;
-    justify-content: none !important;
+    -webkit-box-pack: none !important;
+        -ms-flex-pack: none !important;
+            justify-content: none !important;
   }
   .navbar .container .collapse ul li a {
     padding-bottom: 0rem;
@@ -170,7 +195,6 @@ header .row .col12 .absol {
     letter-spacing: 0.02em;
     color: #000000;
   }
-
   .container .row .text-start h2 {
     font-family: Montserrat;
     font-style: normal;
@@ -181,11 +205,13 @@ header .row .col12 .absol {
     color: #000000;
   }
 }
+
 .teams .carousel .card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -194,15 +220,26 @@ header .row .col12 .absol {
 }
 
 .teams .carousel .card .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .teams .carousel .card:hover .box {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .teams .carousel .card .text {
@@ -214,9 +251,11 @@ header .row .col12 .absol {
 .teams .carousel .card img {
   height: 150px;
   width: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   border: 5px solid #00445b;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -236,6 +275,7 @@ header .row .col12 .absol {
   outline: none !important;
   border-radius: 14px;
   border: 2px solid #646464 !important;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -249,14 +289,18 @@ header .row .col12 .absol {
 .owl-item {
   width: 425px !important;
   margin-right: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Kurslar .carousel .card {
   width: 20rem !important;
   border-radius: none !important;
 }
+
 .Kurslar .carousel .card .btnKurs {
   border-radius: 0 !important;
   width: 100%;
@@ -264,10 +308,12 @@ header .row .col12 .absol {
   background: #00445b;
   color: #fff;
 }
+
 .Kurslar .carousel .card .btnKurs:hover {
   background: #ecfefa;
   border: 1px solid #000000;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #111111;
 }
 
@@ -288,5 +334,4 @@ header .row .col12 .absol {
     height: 378px !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
